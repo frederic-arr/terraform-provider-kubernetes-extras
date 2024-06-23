@@ -116,6 +116,11 @@ func (d *ManifestDataSource) Read(ctx context.Context, req datasource.ReadReques
 	}
 
 	gv, err := runtimeSchema.ParseGroupVersion(data.ApiVersion.ValueString())
+	if err != nil {
+		resp.Diagnostics.AddError("Failed to parse group version", fmt.Sprintf("Failed to parse group version: %s.", err))
+		return
+	}
+
 	kind := data.Kind.ValueString()
 	namespace := data.Namespace.ValueString()
 	name := data.Name.ValueString()
