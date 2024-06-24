@@ -41,6 +41,7 @@ type kubernetesModel struct {
 
 func kubernetesSchema() schema.Block {
 	return schema.SingleNestedBlock{
+		MarkdownDescription: "See the [Kubernetes provider documentation](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs) for more information.",
 		Attributes: map[string]schema.Attribute{
 			"host": schema.StringAttribute{
 				Description: "The hostname (in form of URI) of Kubernetes master. Can be set with the `KUBE_HOST` environment variable.",
