@@ -55,7 +55,7 @@ func (d *ManifestDataSource) Schema(ctx context.Context, req datasource.SchemaRe
 				Required:            true,
 			},
 			"kind": schema.StringAttribute{
-				MarkdownDescription: "Kind of the manifest",
+				MarkdownDescription: "Kind of the manifest (in the plural form)",
 				Required:            true,
 			},
 			"namespace": schema.StringAttribute{
