@@ -46,6 +46,7 @@ func (p *KubernetesExtrasProvider) Metadata(ctx context.Context, req provider.Me
 
 func (p *KubernetesExtrasProvider) Schema(ctx context.Context, req provider.SchemaRequest, resp *provider.SchemaResponse) {
 	resp.Schema = schema.Schema{
+		MarkdownDescription: "Kubernetes Extras provider provides additional functionality for Kubernetes resources (mostly retrying/waiting for resource availability).",
 		Blocks: map[string]schema.Block{
 			"kubernetes": kubernetesSchema(),
 		},

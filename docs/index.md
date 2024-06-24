@@ -3,12 +3,12 @@
 page_title: "kubernetes-extras Provider"
 subcategory: ""
 description: |-
-  
+  Kubernetes Extras provider provides additional functionality for Kubernetes resources (mostly retrying/waiting for resource availability).
 ---
 
 # kubernetes-extras Provider
 
-
+Kubernetes Extras provider provides additional functionality for Kubernetes resources (mostly retrying/waiting for resource availability).
 
 ## Example Usage
 
