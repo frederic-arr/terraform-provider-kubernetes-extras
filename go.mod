@@ -1,6 +1,7 @@
 module terraform-provider-kubernetes-extras
 
-go 1.22.0
+go 1.23.0
+
 toolchain go1.23.5
 
 require (
