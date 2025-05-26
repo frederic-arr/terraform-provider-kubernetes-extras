@@ -18,7 +18,6 @@ import (
 	"k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 	apimachineryschema "k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
-	"k8s.io/client-go/rest"
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/kubectl/pkg/scheme"
@@ -353,5 +352,5 @@ func kubernetesClient(cfg *restclient.Config, group string, version string) (*re
 	}
 
 	cfg.NegotiatedSerializer = serializer.NewCodecFactory(scheme.Scheme).WithoutConversion()
-	return rest.RESTClientFor(cfg)
+	return restclient.RESTClientFor(cfg)
 }
