@@ -1,3 +1,6 @@
+// Copyright (c) The Kubernetes Extras Provider for Terraform Authors
+// SPDX-License-Identifier: MPL-2.0
+
 package provider
 
 import (

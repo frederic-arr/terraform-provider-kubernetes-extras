@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright (c) The Kubernetes Extras Provider for Terraform Authors
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -40,7 +40,7 @@ type KubernetesExtrasProviderData struct {
 }
 
 func (p *KubernetesExtrasProvider) Metadata(ctx context.Context, req provider.MetadataRequest, resp *provider.MetadataResponse) {
-	resp.TypeName = "kubernetes-extras"
+	resp.TypeName = "kubernetesextras"
 	resp.Version = p.version
 }
 

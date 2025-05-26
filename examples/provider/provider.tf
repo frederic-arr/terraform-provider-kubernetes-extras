@@ -1,4 +1,4 @@
-provider "kubernetes-extras" {
+provider "kubernetesextras" {
   kubernetes {
     host                   = var.host
     client_certificate     = var.client_certificate
