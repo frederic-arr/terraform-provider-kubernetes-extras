@@ -4,6 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      k8s:
+        patterns:
+          - "k8s.io/*"
   - package-ecosystem: "gomod"
     directory: "/tools"
     schedule:
